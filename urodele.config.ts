@@ -1,7 +1,7 @@
 export const config = {
   github: {
-    login: "glink25", // github login name, not user name
-    repo: "glink25.github.io", //"urodele",
+    login: "zhj032610-gmail.com", // github login name, not user name
+    repo: "zhj032610-gmail.com.github.io", //"urodele",
     logInUrl:
       "https://github-login.link-ai.workers.dev/api/oauth/authorize?redirect_uri=https://glink25.github.io/login",
     logInAuthUrl: "https://github-login.link-ai.workers.dev/api/oauth/token",
@@ -11,7 +11,7 @@ export const config = {
   },
   footer: {
     copyright: "© Glink",
-    copyrightUrl: "https://github.com/glink25",
+    copyrightUrl: "https://github.com/zhj032610-gmail.com",
   },
   pagination: {
     size: 10,
