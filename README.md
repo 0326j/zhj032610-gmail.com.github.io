@@ -64,7 +64,9 @@ export const config = {
 
 ## 3. 启用Github Pages
 
-在fork后的仓库页面，点击Settings - Pages，选择Build and deployment source为 deploy from branch，此时如果已经触发过Github Actions构建，则会多出一个gh-pages分支，选择使用该分支的 /(root) 目录部署，并保存设置。
+在fork后的仓库页面，点击Settings - Pages，选择Build and deployment source为 **GitHub Actions**。这将使用仓库中的 `.github/workflows/deploy.yml` 工作流自动构建和部署你的博客。
+
+> 注意：新版部署方式使用 GitHub Actions 直接部署，无需再创建 gh-pages 分支。工作流会在每次推送到 main 分支时自动触发构建和部署。
 
 ## 4. 自定义
 
@@ -140,7 +142,9 @@ After making changes, commit them. If GitHub Actions is enabled, it will trigger
 
 ## 4. Enable GitHub Pages
 
-In the forked repository's page, navigate to **Settings > Pages**. Choose the **Build and deployment source** as **Deploy from branch**. If a GitHub Actions build has already been triggered, a `gh-pages` branch will appear. Select this branch's `/ (root)` directory for deployment and save the settings.
+In the forked repository's page, navigate to **Settings > Pages**. Choose the **Build and deployment source** as **GitHub Actions**. This will use the `.github/workflows/deploy.yml` workflow in your repository to automatically build and deploy your blog.
+
+> Note: The new deployment method uses GitHub Actions for direct deployment, eliminating the need for a `gh-pages` branch. The workflow automatically triggers a build and deployment whenever you push to the `main` branch.
 
 ## 5. Customize
 
